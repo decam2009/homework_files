@@ -82,5 +82,5 @@ public class Main {
         fw.flush();
         System.out.println("Информация о созданных папках и файлах записана в файл " + tempFile.getPath());
     }
-    
+
 }
