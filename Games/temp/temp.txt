@@ -1,12 +1,46 @@
-Каталог temp успешно создан
-Каталог src успешно создан
-Каталог res успешно создан
-Каталог savegames успешно создан
-Каталог main успешно создан
-Каталог test успешно создан
-Файл Main.java успешно создан
-Файл temp.txt успешно создан
-Файл Utils.java успешно создан
-Каталог drawable успешно создан
-Каталог vectors успешно создан
-Каталог icons успешно создан
+[Fri Jul 08 08:58:32 MSK 2022] Файл temp.txt успешно создан
+[Fri Jul 08 08:58:32 MSK 2022] Игра успешно сохранена
+[Fri Jul 08 08:58:32 MSK 2022] Игра успешно сохранена
+[Fri Jul 08 08:58:32 MSK 2022] Игра успешно сохранена
+[Fri Jul 08 08:58:32 MSK 2022] Архивация  Games/savegames/data0.dat успешно выполнена в файл savedgames.zip
+[Fri Jul 08 08:58:32 MSK 2022] Архивация  Games/savegames/data1.dat успешно выполнена в файл savedgames.zip
+[Fri Jul 08 08:58:32 MSK 2022] Архивация  Games/savegames/data2.dat успешно выполнена в файл savedgames.zip
+[Fri Jul 08 08:58:32 MSK 2022] Файл Games/savegames/data0.dat успешно удален
+[Fri Jul 08 08:58:32 MSK 2022] Файл Games/savegames/data1.dat успешно удален
+[Fri Jul 08 08:58:32 MSK 2022] Файл Games/savegames/data2.dat успешно удален
+[Fri Jul 08 08:58:32 MSK 2022] Файл Games/savegames/data0.dat успешно разархивирован[Fri Jul 08 08:58:32 MSK 2022] Файл Games/savegames/data1.dat успешно разархивирован[Fri Jul 08 08:58:32 MSK 2022] Файл Games/savegames/data2.dat успешно разархивирован[Fri Jul 08 08:59:07 MSK 2022] Игра успешно сохранена
+[Fri Jul 08 08:59:07 MSK 2022] Игра успешно сохранена
+[Fri Jul 08 08:59:07 MSK 2022] Игра успешно сохранена
+[Fri Jul 08 08:59:07 MSK 2022] Архивация  Games/savegames/data0.dat успешно выполнена в файл savedgames.zip
+[Fri Jul 08 08:59:07 MSK 2022] Архивация  Games/savegames/data1.dat успешно выполнена в файл savedgames.zip
+[Fri Jul 08 08:59:07 MSK 2022] Архивация  Games/savegames/data2.dat успешно выполнена в файл savedgames.zip
+[Fri Jul 08 08:59:07 MSK 2022] Файл Games/savegames/data0.dat успешно удален
+[Fri Jul 08 08:59:07 MSK 2022] Файл Games/savegames/data1.dat успешно удален
+[Fri Jul 08 08:59:07 MSK 2022] Файл Games/savegames/data2.dat успешно удален
+[Fri Jul 08 08:59:07 MSK 2022] Файл Games/savegames/data0.dat успешно разархивирован
+[Fri Jul 08 08:59:07 MSK 2022] Файл Games/savegames/data1.dat успешно разархивирован
+[Fri Jul 08 08:59:07 MSK 2022] Файл Games/savegames/data2.dat успешно разархивирован
+[Fri Jul 08 09:25:00 MSK 2022] Игра успешно сохранена
+[Fri Jul 08 09:25:00 MSK 2022] Игра успешно сохранена
+[Fri Jul 08 09:25:00 MSK 2022] Игра успешно сохранена
+[Fri Jul 08 09:25:00 MSK 2022] Архивация  Games/savegames/data0.dat успешно выполнена в файл savedgames.zip
+[Fri Jul 08 09:25:00 MSK 2022] Архивация  Games/savegames/data1.dat успешно выполнена в файл savedgames.zip
+[Fri Jul 08 09:25:00 MSK 2022] Архивация  Games/savegames/data2.dat успешно выполнена в файл savedgames.zip
+[Fri Jul 08 09:25:00 MSK 2022] Файл Games/savegames/data0.dat успешно удален
+[Fri Jul 08 09:25:00 MSK 2022] Файл Games/savegames/data1.dat успешно удален
+[Fri Jul 08 09:25:00 MSK 2022] Файл Games/savegames/data2.dat успешно удален
+[Fri Jul 08 09:25:00 MSK 2022] Файл Games/savegames/data0.dat успешно разархивирован
+[Fri Jul 08 09:25:00 MSK 2022] Файл Games/savegames/data1.dat успешно разархивирован
+[Fri Jul 08 09:25:00 MSK 2022] Файл Games/savegames/data2.dat успешно разархивирован
+[Fri Jul 08 09:25:18 MSK 2022] Игра успешно сохранена
+[Fri Jul 08 09:25:18 MSK 2022] Игра успешно сохранена
+[Fri Jul 08 09:25:18 MSK 2022] Игра успешно сохранена
+[Fri Jul 08 09:25:18 MSK 2022] Архивация  Games/savegames/data0.dat успешно выполнена в файл savedgames.zip
+[Fri Jul 08 09:25:18 MSK 2022] Архивация  Games/savegames/data1.dat успешно выполнена в файл savedgames.zip
+[Fri Jul 08 09:25:18 MSK 2022] Архивация  Games/savegames/data2.dat успешно выполнена в файл savedgames.zip
+[Fri Jul 08 09:25:18 MSK 2022] Файл Games/savegames/data0.dat успешно удален
+[Fri Jul 08 09:25:18 MSK 2022] Файл Games/savegames/data1.dat успешно удален
+[Fri Jul 08 09:25:18 MSK 2022] Файл Games/savegames/data2.dat успешно удален
+[Fri Jul 08 09:25:18 MSK 2022] Файл Games/savegames/data0.dat успешно разархивирован
+[Fri Jul 08 09:25:18 MSK 2022] Файл Games/savegames/data1.dat успешно разархивирован
+[Fri Jul 08 09:25:18 MSK 2022] Файл Games/savegames/data2.dat успешно разархивирован
