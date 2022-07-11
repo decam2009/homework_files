@@ -1,34 +1,16 @@
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
 public class Main {
+    private static final StringBuilder stringBuilder = new StringBuilder();
 
-    private static File srcFolder = new File("Games/src");
-    private static File mainFolder = new File("Games/src/main");
+    private static final List<String> filesToArchive = new ArrayList<>();
 
-    private static File mainJavaFile = new File("Games/src/main/Main.java");
-    private static File utilsJavaFile = new File("Games/src/main/Utils.java");
-
-    private static File testFolder = new File("Games/src/test");
-
-
-    private static File resFolder = new File("Games/res");
-    private static File drawableFolder = new File("Games/res/drawable");
-    private static File vectorsFolder = new File("Games/res/vectors");
-    private static File iconsFolder = new File("Games/res/icons");
-    private static File saveGamesFolder = new File("Games/savegames");
-    private static File tempFolder = new File("Games/temp");
-    private static File tempFile = new File("Games/temp/temp.txt");
-
-    private static StringBuilder stringBuilder = new StringBuilder();
-
-    private static List<String> filesToArchive = new ArrayList<>();
-
+    private static final List<String> directories = new ArrayList<>();
+    private static final List<String> files = new ArrayList<>();
 
     private static void logger(String logMessage) {
         stringBuilder.append("[" + new Date() + "]" + " " + logMessage);
@@ -54,6 +36,7 @@ public class Main {
                 fis.read(buffer);
                 //добавляем содержимое к архиву
                 zos.write(buffer);
+                fis.close();
                 logger("Архивация  " + zipFile + " успешно выполнена в файл savedgames.zip\n");
             }
         } catch (IOException e) {
@@ -93,50 +76,35 @@ public class Main {
 
     public static void main(String[] args) {
 
-        if (tempFolder.mkdir()) {
-            logger("Каталог temp успешно создан\n");
-        }
+        directories.add("Games/src");
+        directories.add("Games/src/main");
+        files.add("Games/src/main/Main.java");
+        files.add("Games/src/main/Utils.java");
+        directories.add("Games/src/test");
+        directories.add("Games/res");
+        directories.add("Games/res/drawable");
+        directories.add("Games/res/vectors");
+        directories.add("Games/res/icons");
+        directories.add("Games/savegames");
+        directories.add("Games/temp");
+        files.add("Games/temp/temp.txt");
 
-        if (srcFolder.mkdir()) {
-            logger("Каталог src успешно создан\n");
-        }
-        if (resFolder.mkdir()) {
-            logger("Каталог res успешно создан\n");
-        }
-        if (saveGamesFolder.mkdir()) {
-            logger("Каталог savegames успешно создан\n");
-        }
-        if (mainFolder.mkdir()) {
-            logger("Каталог main успешно создан\n");
-        }
-        if (testFolder.mkdir()) {
-            logger("Каталог test успешно создан\n");
-        }
-
-        try {
-            if (mainJavaFile.createNewFile()) {
-                logger("Файл Main.java успешно создан\n");
+        for (String directoryPath : directories) {
+            File tmp = new File(directoryPath);
+            if (tmp.mkdir()) {
+                logger("Папка " + directoryPath + " успешно создана\n");
             }
-            if (tempFile.createNewFile()) {
-                logger("Файл temp.txt успешно создан\n");
+        }
+
+        for (String filePath : files) {
+            File tmp = new File(filePath);
+            try {
+                if (tmp.createNewFile()) {
+                    logger("Файл " + tmp + " успешно создан");
+                }
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
             }
-            if (utilsJavaFile.createNewFile()) {
-                logger("Файл Utils.java успешно создан\n");
-            }
-        } catch (IOException e) {
-            System.out.println(e.getStackTrace());
-        }
-
-        if (drawableFolder.mkdir()) {
-            logger("Каталог drawable успешно создан\n");
-        }
-
-        if (vectorsFolder.mkdir()) {
-            logger("Каталог vectors успешно создан\n");
-        }
-
-        if (iconsFolder.mkdir()) {
-            logger("Каталог icons успешно создан\n");
         }
 
         GameProgress gameProgress1 = new GameProgress(78, 46, 2, 134.8);
@@ -164,12 +132,15 @@ public class Main {
 
         System.out.println(deserializedGameProgress);
 
-        try (FileWriter fw = new FileWriter(tempFile, true)) {
-            fw.write(stringBuilder.toString());
-            fw.flush();
-            System.out.println("Информация о созданных папках и файлах записана в файл " + tempFile.getPath());
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
+        File tempFile = new File("Games/temp/temp.txt");
+        if (tempFile.exists()) {
+            try (FileWriter fw = new FileWriter(tempFile, true)) {
+                fw.write(stringBuilder.toString());
+                fw.flush();
+                System.out.println("Информация о созданных папках и файлах записана в файл " + tempFile.getPath());
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
         }
     }
 }
